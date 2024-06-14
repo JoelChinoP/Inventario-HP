@@ -11,11 +11,11 @@ export default function Page() {
   ];
 
   return (
-    <main className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+    <main className="bg-gray-900 dark:bg-gray-900 text-gray-900 dark:text-white">
       {/* Hero Section */}
-      <section className="bg-[#004d40] text-white py-20">
+      <section className="bg-gray-900 text-white py-20">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center">
+          <div className="flex flex-col md:flex-row items-center px-10">
             <div className="md:w-2/3 mb-10 md:mb-0">
               <h1 className="text-4xl font-bold mb-4">Servicios Técnicos de Calidad</h1>
               <p className="mb-6 mr-20">En HP COMPUTER E.I.R.L. ofrecemos soluciones integrales para el mantenimiento y reparación de tus equipos de cómputo.</p>
