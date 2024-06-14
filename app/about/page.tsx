@@ -1,10 +1,12 @@
+import Image from "next/image";
+
 export default function Page() {
     return (
         <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 <h1 className="text-4xl font-bold text-center mb-12">Sobre Nosotros</h1>
 
-                <div className="text-center mb-16">
+                <div className="text-center mb-16 mx-48">
                     <p className="text-xl mb-6">
                         Somos una empresa de servicio técnico enfocada en brindar soluciones
                         innovadoras y de vanguardia a nuestros clientes. Nuestro compromiso es
@@ -13,7 +15,7 @@ export default function Page() {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-12 mb-16">
+                <div className="grid md:grid-cols-2 gap-12 mb-16 mx-20">
                     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h2 className="text-2xl font-semibold mb-4">Misión</h2>
                         <p>
@@ -35,34 +37,38 @@ export default function Page() {
                     </div>
                 </div>
 
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg mx-20">
                     <h2 className="text-2xl font-semibold mb-6">Valores y Principios</h2>
-                    <ul className="space-y-4">
-                        <li className="flex items-start">
-                            <svg className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span><strong>Innovación:</strong> Fomentamos la creatividad y la búsqueda constante de nuevas soluciones.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <svg className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span><strong>Excelencia:</strong> Nos esforzamos por brindar servicios y productos de la más alta calidad.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <svg className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span><strong>Integridad:</strong> Actuamos con honestidad, transparencia y responsabilidad en todas nuestras acciones.</span>
-                        </li>
-                        <li className="flex items-start">
-                            <svg className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span><strong>Colaboración:</strong> Trabajamos en equipo para lograr los mejores resultados para nuestros clientes.</span>
-                        </li>
-                    </ul>
+                    <div className="flex items-center px-10">
+                        <Image src="/images/valores.png" alt="logo" width={250} height={250}/>
+                        <ul className="space-y-4">
+                            <li className="flex items-start">
+                                <svg className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span><strong>Innovación:</strong> Fomentamos la creatividad y la búsqueda constante de nuevas soluciones.</span>
+                            </li>
+                            <li className="flex items-start">
+                                <svg className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span><strong>Excelencia:</strong> Nos esforzamos por brindar servicios y productos de la más alta calidad.</span>
+                            </li>
+                            <li className="flex items-start">
+                                <svg className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span><strong>Integridad:</strong> Actuamos con honestidad, transparencia y responsabilidad en todas nuestras acciones.</span>
+                            </li>
+                            <li className="flex items-start">
+                                <svg className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span><strong>Colaboración:</strong> Trabajamos en equipo para lograr los mejores resultados para nuestros clientes.</span>
+                            </li>
+                        </ul>
+</div>
+
                 </div>
             </div>
         </div>
