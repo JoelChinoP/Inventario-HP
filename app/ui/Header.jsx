@@ -1,12 +1,13 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Header() {
     return (
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="/images/logo .png" class="h-8" alt="logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">HP-Computer</span>
+                    <Image src="/images/logo.png" alt="logo" width={32} height={32}/>
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">HP-Computer</span>
                 </Link>
 
                 <div className="flex flex-col md:flex-row">
