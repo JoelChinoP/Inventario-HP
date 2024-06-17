@@ -8,12 +8,21 @@ export default function Header() {
     const pathname = usePathname()
 
     return (
-        <nav className="text-white bg-gray-900">
+        <nav className="text-white bg-gray-900 pt-1">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <Image src="/logo.png" alt="logo" width={32} height={32}/>
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap">HP-Computer</span>
-                </Link>
+            <Link href="/" className="group flex items-center space-x-3 rtl:space-x-reverse">
+                <div className="relative group-hover:filter group-hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.5)]">
+                    <Image
+                    src="/logo.png"
+                    alt="logo"
+                    width={32}
+                    height={32}
+                    />
+                </div>
+                <span className="self-center text-2xl font-semibold whitespace-nowrap group-hover:filter group-hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.5)]">
+                    HP-Computer
+                </span>
+            </Link>
 
                 <div className="flex flex-col md:flex-row">
                     <Enlace ruta="/" nombre="Inicio" pathname={pathname}/>
